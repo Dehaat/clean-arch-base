@@ -1,1 +1,1 @@
-# clean-arch-base
+# clean-arch-base-lib
