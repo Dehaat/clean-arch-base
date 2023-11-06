@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    namespace 'com.cleanarch.base'
+    compileSdk projectCompileSdkVersion
 
     defaultConfig {
-        minSdk 21
-        targetSdk 31
-        versionCode 1
-        versionName "0.0.2"
+        minSdk projectMinSdkVersion
+        targetSdk projectTargetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
