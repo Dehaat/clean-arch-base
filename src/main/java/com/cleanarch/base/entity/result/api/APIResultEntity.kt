@@ -11,7 +11,8 @@ sealed class APIResultEntity<out R> : IResultEntity {
             val httpCode: Int,
             val responseMessage: String,
             val responseErrorBody: String?,
-            val apiExtraInfo: ApiExtraInfo?
+            val apiExtraInfo: ApiExtraInfo?,
+            val tmsErrorCode: String? = null
         ) : Failure()
     }
 }
